@@ -20,9 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Teste_DTI">
-      <HintPath>..\Teste_DTI\bin\Debug\netcoreapp3.1\Teste_DTI.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\Teste_DTI\Teste_DTI.csproj" />
   </ItemGroup>
 
 </Project>
