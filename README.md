@@ -1,6 +1,6 @@
 # Teste DTI
 
-![Preview-Screen](https://github.com/RafaelCunhafs/Teste_DTI/blob/master/Preview.png)
+![Preview-Screen](https://github.com/RafaelCunhafs/Teste_DTI/blob/master/Preview.gif)
 
 ## About this Project
 
@@ -12,6 +12,7 @@ This project is an simple CRUD API RESTful for client control.
 - Delete Client
 - Delete multiple Clients
 - Sort Client table
+- Form validation
 
 ## Getting Started
 
@@ -73,17 +74,17 @@ $ git clone https://github.com/RafaelCunhafs/Teste_DTI
         "id": "b3f2ac6e-0645-41b9-8546-ffe7d7659506",
         "nome": "Murilo Matheus Francisco Farias",
         "endereco": "Rua das Acarapé 722, Ricardo de Albuquerque, Rio de Janeiro, RJ",
-        "celular": "(21) 99862-4961",
+        "celular": "21998624961",
         "email": "murilomatheusfranciscofarias_@numero.com.br",
-        "cpf": "479.666.767-90"
+        "cpf": "47966676790"
     },
     {
         "id": "bf475635-5a57-4959-8a1e-2f48af6fd465",
         "nome": "Regina Maitê Ribeiro",
         "endereco": "Rua Doze 286, Parque das Laranjeiras, Formosa, GO",
-        "celular": "(61) 99404-5160",
+        "celular": "61994045160",
         "email": "reginamaiteribeiro@andressamelo.com.br",
-        "cpf": "043.345.652-39"
+        "cpf": "04334565239"
     }
 ]
 ```
@@ -98,9 +99,9 @@ $ git clone https://github.com/RafaelCunhafs/Teste_DTI
     "id": "bf475635-5a57-4959-8a1e-2f48af6fd465",
     "nome": "Regina Maitê Ribeiro",
     "endereco": "Rua Doze 286, Parque das Laranjeiras, Formosa, GO",
-    "celular": "(61) 99404-5160",
+    "celular": "61994045160",
     "email": "reginamaiteribeiro@andressamelo.com.br",
-    "cpf": "043.345.652-39"
+    "cpf": "04334565239"
 }
 ```
 
@@ -141,9 +142,9 @@ $ git clone https://github.com/RafaelCunhafs/Teste_DTI
     "id": "097763db-f8f4-4c5a-a785-e01595c2b4e4",
     "nome": "Olivia Cristiane Carvalho",
     "endereco": "Rua das Orquídeas 905, Samarita, São Vicente, SP",
-    "celular": "(13) 98719-7190",
+    "celular": "13987197190",
     "email": "oliviacristianecarvalho_@smbcontabil.com.br",
-    "cpf": "103.149.310-74"
+    "cpf": "10314931074"
 }
 ```
 
