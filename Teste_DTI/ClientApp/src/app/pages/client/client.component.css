@@ -1,0 +1,15 @@
+#client {
+  margin: 20px;
+}
+
+#client h1 {
+  margin-left: 50px;
+}
+
+#client .search-input {
+  margin-left: 50px;
+}
+
+#client table {
+  width: 100%;
+}

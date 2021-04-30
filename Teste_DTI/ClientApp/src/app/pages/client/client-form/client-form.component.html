@@ -1,0 +1,52 @@
+<h1 mat-dialog-title *ngIf="client.id == null"><strong>Create Client</strong></h1>
+<h1 mat-dialog-title *ngIf="client.id != null"><strong>Edit Client</strong></h1>
+
+<mat-dialog-content [formGroup]="clientForm">
+  <table>
+    <tr>
+      <mat-form-field>
+        <input matInput
+               placeholder="Name"
+               formControlName="nome">
+      </mat-form-field>
+    </tr>
+    <tr>
+      <mat-form-field>
+        <input matInput
+               placeholder="Address"
+               formControlName="endereco">
+      </mat-form-field>
+    </tr>
+
+    <tr>
+      <mat-form-field>
+        <input matInput
+               placeholder="Cellphone"
+               formControlName="celular">
+      </mat-form-field>
+    </tr>
+
+    <tr>
+      <mat-form-field>
+        <input matInput
+               placeholder="E-mail"
+               formControlName="email">
+      </mat-form-field>
+    </tr>
+
+    <tr>
+      <mat-form-field>
+        <input matInput
+               placeholder="CPF"
+               formControlName="cpf">
+      </mat-form-field>
+    </tr>
+  </table>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button class="mat-raised-button mr-1" (click)="close()">Close</button>
+  <button *ngIf="client.id == null" class="mat-raised-button mat-primary" (click)="createClient()" [disabled]="!clientForm.valid">Create</button>
+  <button *ngIf="client.id != null" class="mat-raised-button mat-primary" (click)="editClient()" [disabled]="!clientForm.valid">Edit</button>
+</mat-dialog-actions>
