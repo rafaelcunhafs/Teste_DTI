@@ -32,5 +32,25 @@ namespace Teste_DTI.UnitTest.Services.Client.ClientService.ClientServiceClass
             var existingClient = _sut.GetById(createdClient.Id);
             Assert.Equal(existingClient, createdClient);
         }
+
+        [Fact]
+        public void WhenCalled_ShouldVerifyIfReturnIsClient()
+        {
+            //Arrange
+            var newClient = new DTIModels.Client()
+            {
+                Nome = "Cliente Teste",
+                Endereco = "Rua Teste",
+                Celular = "(31) 99999-9999",
+                CPF = "111.111.111-11",
+                Email = "teste@email.com"
+            };
+
+            //Act
+            var createdClient = _sut.Create(newClient);
+
+            //Assert
+            Assert.IsType<DTIModels.Client>(createdClient);
+        }
     }
 }

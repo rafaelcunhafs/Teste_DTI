@@ -8,6 +8,12 @@
         <input matInput
                placeholder="Name"
                formControlName="nome">
+
+        <mat-error *ngFor="let validation of errorMessages.nome">
+          <mat-error class="error-message" *ngIf="clientForm.get('nome').hasError(validation.type) && (clientForm.get('nome').dirty || clientForm.get('nome').touched)">
+            {{validation.message}}
+          </mat-error>
+        </mat-error>
       </mat-form-field>
     </tr>
     <tr>
@@ -15,30 +21,59 @@
         <input matInput
                placeholder="Address"
                formControlName="endereco">
+
+        <mat-error *ngFor="let validation of errorMessages.endereco">
+          <mat-error class="error-message" *ngIf="clientForm.get('endereco').hasError(validation.type) && (clientForm.get('endereco').dirty || clientForm.get('endereco').touched)">
+            {{validation.message}}
+          </mat-error>
+        </mat-error>
       </mat-form-field>
     </tr>
 
     <tr>
       <mat-form-field>
         <input matInput
+               mask="(00) 00000-0000"
+               [validation]="true"
                placeholder="Cellphone"
                formControlName="celular">
+
+        <mat-error *ngFor="let validation of errorMessages.celular">
+          <mat-error class="error-message" *ngIf="clientForm.get('celular').hasError(validation.type) && (clientForm.get('celular').dirty || clientForm.get('celular').touched)">
+            {{validation.message}}
+          </mat-error>
+        </mat-error>
       </mat-form-field>
     </tr>
 
     <tr>
       <mat-form-field>
         <input matInput
+               type="email"
                placeholder="E-mail"
                formControlName="email">
+
+        <mat-error *ngFor="let validation of errorMessages.email">
+          <mat-error class="error-message" *ngIf="clientForm.get('email').hasError(validation.type) && (clientForm.get('email').dirty || clientForm.get('email').touched)">
+            {{validation.message}}
+          </mat-error>
+        </mat-error>
       </mat-form-field>
     </tr>
 
     <tr>
       <mat-form-field>
         <input matInput
+               mask="000.000.000-00"
+               [validation]="true"
                placeholder="CPF"
                formControlName="cpf">
+
+        <mat-error *ngFor="let validation of errorMessages.cpf">
+          <mat-error class="error-message" *ngIf="clientForm.get('cpf').hasError(validation.type) && (clientForm.get('cpf').dirty || clientForm.get('cpf').touched)">
+            {{validation.message}}
+          </mat-error>
+        </mat-error>
       </mat-form-field>
     </tr>
   </table>

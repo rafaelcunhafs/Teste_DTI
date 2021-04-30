@@ -14,36 +14,36 @@ namespace Teste_DTI.Services
                 Id = Guid.NewGuid(),
                 Nome = "Mateus César Lucas Monteiro",
                 Endereco = "Rua Quatro 983, Coqueiral de Itaparica, Vila Velha, ES",
-		        Celular = "(27) 98830-2206",
+		        Celular = "27988302206",
 		        Email = "mateuscesarlucasmonteiro@detorsul.com",
-		        CPF = "972.571.854-25"
+		        CPF = "97257185425"
             },
             new Client()
             {
                 Id = Guid.NewGuid(),
                 Nome = "Regina Maitê Ribeiro",
                 Endereco = "Rua Doze 286, Parque das Laranjeiras, Formosa, GO",
-                Celular = "(61) 99404-5160",
+                Celular = "61994045160",
                 Email = "reginamaiteribeiro@andressamelo.com.br",
-                CPF = "043.345.652-39"
+                CPF = "04334565239"
             },
             new Client()
             {
                 Id = Guid.NewGuid(),
                 Nome = "Murilo Matheus Francisco Farias",
                 Endereco = "Rua das Acarapé 722, Ricardo de Albuquerque, Rio de Janeiro, RJ",
-                Celular = "(21) 99862-4961",
+                Celular = "21998624961",
                 Email = "murilomatheusfranciscofarias_@numero.com.br",
-                CPF = "479.666.767-90"
+                CPF = "47966676790"
             },
             new Client()
             {
                 Id = Guid.NewGuid(),
                 Nome = "Olivia Cristiane Carvalho",
                 Endereco = "Rua das Orquídeas 905, Samarita, São Vicente, SP",
-                Celular = "(13) 98719-7190",
+                Celular = "13987197190",
                 Email = "oliviacristianecarvalho_@smbcontabil.com.br",
-                CPF = "103.149.310-74"
+                CPF = "10314931074"
             }
         };
 

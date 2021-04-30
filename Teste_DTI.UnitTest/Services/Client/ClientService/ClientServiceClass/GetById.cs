@@ -2,6 +2,7 @@
 using System.Linq;
 using Xunit;
 using DTIServices = Teste_DTI.Services;
+using DTIModels = Teste_DTI.Models;
 
 namespace Teste_DTI.UnitTest.Services.Client.ClientService.ClientServiceClass
 {
@@ -38,6 +39,19 @@ namespace Teste_DTI.UnitTest.Services.Client.ClientService.ClientServiceClass
 
             //Assert
             Assert.Null(client);
+        }
+
+        [Fact]
+        public void WhenExistClient_ShouldVerifyIfReturnIsClient()
+        {
+            //Arrange
+            var clientId = _sut.Get().First().Id;
+
+            //Act
+            var client = _sut.GetById(clientId);
+
+            //Assert
+            Assert.IsType<DTIModels.Client>(client);
         }
     }
 }

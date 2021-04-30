@@ -20,6 +20,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+
+export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
 import { ClientService } from './services/client/client.service';
 import { Constants } from 'src/app/configs/constants';
@@ -44,6 +47,7 @@ import { ConfirmDialogComponent } from './shared/components/confirm-dialog/confi
 
     FormsModule,
     ReactiveFormsModule,
+    NgxMaskModule.forRoot(),
 
     MatToolbarModule,
     MatTableModule,
